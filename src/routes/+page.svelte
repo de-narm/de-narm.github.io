@@ -2,6 +2,22 @@
 	import logo from '$lib/assets/logo.svg';
 </script>
 
+<!--Main Block -->
+<div class="w-full py-20 flex-col flex justify-center items-center gap-6">
+  <div class="w-[400px] text-center text-5xl font-semibold">
+    This could be our 
+    <span class="text-logo italic">awesome</span>
+    motto
+  </div>
+  <div class="w-[300px] text-center text-2xl font-medium text-stone-300">
+    Have I told you about our featuring features yet?
+  </div>
+  <button class="bg-logo px-5 py-3 rounded-xl">
+    Start now!
+  </button>
+</div>
+
+<!--
 {#snippet transition(startColor: string, endColor: string, rotate: boolean = false)}
   <div class="w-full h-[50px] flex bg-{startColor} {rotate ? 'rotate-180' : ''}">
     <div class="h-full w-full "></div>
@@ -13,10 +29,12 @@
 {/snippet}
 
 {#snippet colorBlock(color: string)}
+  <div>
   {@render transition("transparent", color)}
   <div class="w-full h-[200px] bg-{color}">
   </div>
   {@render transition("transparent", color, true)}
+  </div>
 {/snippet}
 
 <div class="flex justify-center">
@@ -34,4 +52,15 @@
 <div class="flex justify-center">
   <img class="w-1/3 m-10" src={logo} />
 </div>
+
+
+*** background grid
+<div class="bg-gray-light w-full h-full absolute -z-2 inset-0" />
+<div class="absolute -z-1 inset-0 top-[31px] left-[31px] h-full w-full
+            bg-[radial-gradient(circle,#232525ff_5px,transparent_5px)]
+            bg-[size:60px_60px]" />
+<div class="absolute -z-1 inset-0 h-full w-full
+            bg-[linear-gradient(to_right,#232525ff_2px,transparent_2px),linear-gradient(to_bottom,#232525ff_2px,transparent_2px)]
+            bg-[size:60px_60px]" />
+-->
 
