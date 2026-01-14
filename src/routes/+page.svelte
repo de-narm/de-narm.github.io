@@ -2,19 +2,32 @@
 	import logo from '$lib/assets/logo.svg';
 </script>
 
-<!--Main Block -->
-<div class="w-full py-20 flex-col flex justify-center items-center gap-6">
-  <div class="w-[400px] text-center text-5xl font-semibold">
+<!-- Main Block -->
+<div class="w-full py-20 flex-col flex justify-center items-center gap-6 
+            relative">
+  <!-- Intro Text -->
+  <div class="w-[400px] text-center text-5xl font-semibold z-1">
     This could be our 
     <span class="text-logo italic">awesome</span>
     motto
   </div>
-  <div class="w-[300px] text-center text-2xl font-medium text-stone-300">
+  <div class="w-[300px] text-center text-2xl font-medium text-stone-300 z-1">
     Have I told you about our featuring features yet?
   </div>
-  <button class="bg-logo px-5 py-3 rounded-xl">
+  <button class="bg-logo px-5 py-3 rounded-xl z-1">
     Start now!
   </button>
+
+  <!-- Background Grid -->
+  <div class="absolute inset-0 h-full w-full opacity-60
+              mask-y-from-95% mask-x-from-80%">
+    <div class="absolute top-[31px] left-[31px] h-full w-full
+                bg-[radial-gradient(circle,#232525ff_5px,transparent_5px)]
+                bg-[size:60px_60px]" />
+    <div class="absolute h-full w-full
+                bg-[linear-gradient(to_right,#232525ff_2px,transparent_2px),linear-gradient(to_bottom,#232525ff_2px,transparent_2px)]
+                bg-[size:60px_60px]" />
+  </div>
 </div>
 
 <!--
