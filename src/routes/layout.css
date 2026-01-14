@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+@import '@material-design-icons/font';
+
+@theme {
+  --color-gray-light: #272929;
+  --color-purple-logo: #5f759e;
+}
