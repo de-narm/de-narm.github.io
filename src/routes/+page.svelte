@@ -18,16 +18,6 @@
     Start now!
   </button>
 
-  <!-- Background Grid -->
-  <div class="absolute inset-0 h-full w-full opacity-60
-              mask-y-from-95% mask-x-from-80%">
-    <div class="absolute top-[31px] left-[31px] h-full w-full
-                bg-[radial-gradient(circle,#232525ff_5px,transparent_5px)]
-                bg-[size:60px_60px]" />
-    <div class="absolute h-full w-full
-                bg-[linear-gradient(to_right,#232525ff_2px,transparent_2px),linear-gradient(to_bottom,#232525ff_2px,transparent_2px)]
-                bg-[size:60px_60px]" />
-  </div>
 </div>
 
 <!--
