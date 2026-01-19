@@ -3,4 +3,7 @@
 
 @theme {
   --color-logo: #5f759e;
+  --color-frame-gray: #42494d;
+  --color-frame-fill: #21474d;
+  --color-frame-bg: #0d0f0f;
 }
