@@ -1,5 +1,6 @@
 <script lang="ts">
 	import logo from '$lib/assets/logo.svg';
+	import screenshot from '$lib/assets/screenshot.png';
 </script>
 
 <!-- Main Block -->
@@ -17,6 +18,13 @@
   <button class="bg-logo px-5 py-3 rounded-xl z-1">
     Start now!
   </button>
+
+  <!-- Screenshot -->
+  <div class="mt-20 p-10">
+    <div class="bg-zinc-950 p-4 border border-zinc-600 rounded-3xl">
+      <img src={screenshot} class="rounded-2xl">
+    </div>
+  </div>
 
 </div>
 

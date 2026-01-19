@@ -1,6 +1,7 @@
 <script lang="ts">
 	import './layout.css';
 	import logo from '$lib/assets/logo.svg';
+	import github from '$lib/assets/github.svg';
 
 	let { children } = $props();
 </script>
@@ -16,9 +17,8 @@
   </div>
 {/snippet}
 
-<div class="bg-black/93 text-white w-screen h-screen flex
-            justify-center overflow-y-hidden">
-  <!-- Main Container -->
+<!-- Navigation -->
+<div class="bg-black/93 text-white w-screen h-fit flex justify-center">
   <div class="w-[980px] p-5 z-1">
     <nav class="flex justify-between my-5">
       <div class="flex gap-1 items-center">
@@ -28,14 +28,21 @@
         {@render navButton("Showcase", false)}
         {@render navButton("Pricing", false)}
       </div>
-      <div class="">
-      </div>
+      <img class="w-[30px] opacity-70" src="{github}">
     </nav>
+  </div>
+</div>
+
+<div class="bg-black/93 text-white w-screen h-screen flex relative
+            justify-center items-center overflow-y-auto flex-col">
+  <!-- Main Container -->
+  <div class="w-[980px] p-5 z-1 h-full">
     {@render children()}
   </div>
+  
   <!-- Grid Container -->
-  <div class="absolute z-0 top-20 bottom-20 w-full
-              max-w-[1580px] opacity-80">
+  <div class="absolute z-0 top-0 bottom-20 w-full
+              max-w-[1380px] opacity-80">
     <div class="absolute inset-0 h-full w-full flex
                 mask-y-from-95% mask-x-from-80% overflow-hidden">
       <div class="absolute top-[31px] left-[31px] h-full w-full
