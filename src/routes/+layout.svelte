@@ -6,6 +6,7 @@
 	let { children } = $props();
 
   let scrollContainerHeight: number = $state();
+
 </script>
 
 <svelte:head>

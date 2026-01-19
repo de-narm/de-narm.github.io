@@ -1,6 +1,7 @@
 <script lang="ts">
 	import logo from '$lib/assets/logo.svg';
 	import screenshot from '$lib/assets/screenshot.png';
+
 </script>
 
 <!-- Main Block -->
