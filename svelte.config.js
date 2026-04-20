@@ -7,7 +7,7 @@ const config = {
 
 	kit: {
     appDir: 'app',
-		adapter: adapter()
+		adapter: adapter({ pages: "docs" })
 	}
 };
 
